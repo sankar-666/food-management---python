@@ -1,0 +1,134 @@
+
+
+
+    <!DOCTYPE HTML>
+    <html lang="en">
+    
+    <head>
+        <title>Register fast</title>
+        <!-- Meta tag Keywords -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Creative Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements"
+        />
+        <script type="application/x-javascript">
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+    
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <!-- Meta tag Keywords -->
+        <!-- css files -->
+        <link rel="stylesheet" href="/static/login/css/style.css" type="text/css" media="all" />
+        <!-- Style-CSS -->
+        <link rel="stylesheet" href="/static/login/css/font-awesome.css">
+        <!-- Font-Awesome-Icons-CSS -->
+        <!-- //css files -->
+        <!-- online-fonts -->
+        <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        <!-- //online-fonts -->
+    </head>
+    
+    <body>
+        <!--header-->
+        <div class="header-w3l">
+            <h1>
+                <!-- <span>C</span>reative -->
+                <span>R</span>egister
+                <span>H</span>ere</h1>
+        </div>
+        <!--//header-->
+        <div class="main-content-agile">
+            <div class="sub-main-w3">
+                <h2 style="color: rgb(239, 131, 55);">Donor Register</h2>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="pom-agile">
+                        <span class="fa fa-user-o" aria-hidden="true"></span>
+                        <input placeholder="name" name="name" class="user" type="text" required="">
+                    </div>
+                    <div class="pom-agile">
+                        <span class="" aria-hidden="true"></span>
+                        <input placeholder="place" name="place" class="user" type="text" required="">
+                    </div>
+                    <div class="pom-agile">
+                        <span class="" aria-hidden="true"></span>
+                        <input placeholder="phone" name="phone" class="user" type="text" required="">
+                    </div>
+                    <div class="pom-agile">
+                        <span class="" aria-hidden="true"></span>
+                        <input placeholder="email" name="email" class="user" type="email" required="">
+                    </div>
+                    <div class="pom-agile">
+                        <span class="" aria-hidden="true"></span>
+                        <input placeholder="proof" name="id" class="user" type="file" required="">
+                    </div>
+                    <div class="pom-agile">
+                        <span class=" f aria-hidden="true"></span>
+                        <input placeholder="UserName" name="uname" class="user" type="text" required="">
+                    </div>
+                    <div class="pom-agile">
+                        <span class="fa fa-key" aria-hidden="true"></span>
+                        <input placeholder="Password" name="pswd" class="pass" type="password" required="">
+                    </div>
+                    <div class="pom-agile">
+                        <span class= ""aria-hidden="true"></span>
+                    <input type="text" name="lat" placeholder="set Location"  class="form-control" id="lat">
+                            <a onclick="myFunction();"><b style="cursor: pointer;">View Map</b></a>
+                    </div>
+                    <div id="dvMap" style="width: 450px; height: 400px"></div>
+                    <div class="pom-agile">
+                        <span class= ""aria-hidden="true"></span>
+                       <input type="text" name="long"  class="form-control" id="lon">
+                       <!-- <a onclick="myFunction();"><b>select Longitude</b></a> -->
+                    </div>
+                    <div class="sub-w3l">
+                        <div class="sub-agile">
+                            <input type="checkbox" id="brand1" value="">
+                            <label for="brand1">
+                                <span></span>Remember me</label>
+                        </div>
+                        <!-- <a href="#">Forgot Password?</a> -->
+                        <div class="clear"></div>
+                    </div>
+                    <div class="right-w3l">
+                        <input type="submit" name="btn" value="Register">
+                    </div>
+                    <a style="color:rgb(245, 179, 47) ; position: relative ; right: 190px;top: 40px;" href="/">home</a>
+                </form>
+            </div>
+        </div>
+        <!--//main-->
+        <!--footer-->
+        <div class="footer">
+            <p>Design by
+                <a href="">Sankar</a>
+            </p>
+        </div>
+        <!--//footer-->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD3MPnSnyWwNmpnVEFkaddVvy_GWtxSejs&sensor=false"></script>
+    <script type="text/javascript">
+        // window.onload = function () {
+          function myFunction(){
+            var mapOptions = {
+                center: new google.maps.LatLng(9.9763482, 76.286272),
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var infoWindow = new google.maps.InfoWindow();
+            var latlngbounds = new google.maps.LatLngBounds();
+            var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+            google.maps.event.addListener(map, 'click', function (e) {
+                alert("Latitude: " + e.latLng.lat() + "\r\nLongitude: " + e.latLng.lng());
+              document.getElementById('lat').value = e.latLng.lat();
+                document.getElementById('lon').value = e.latLng.lng();
+           
+
+            });
+        }
+    </script>
+    </body>
+    
+    </html>
